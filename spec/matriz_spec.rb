@@ -20,7 +20,7 @@ describe Matriz do
 	end
 
 	it "Comprobando mostrar matrices" do
-		@matriz-Matriz.new([[1,2],[0,1]]).to_s
+		Matriz.new([[1,2],[0,1]]).to_s
 	end
 
 end
