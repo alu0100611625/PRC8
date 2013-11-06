@@ -26,5 +26,9 @@ describe Matriz do
 		it "Comprobando mostrar traspuesta" do
 		Matriz.new([[1,2],[0,1]]).to_trasp
 	end
+	
+		it "Comprobando mostrar matriz en valor absoluto" do
+		Matriz.new([[1,2],[0,1]]).to_abs
+	end
 
 end
