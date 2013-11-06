@@ -7,11 +7,11 @@ describe Matriz do
 	end
 
 	it "Comprobando que se suman dos matrices" do
-		@matriz + Matriz.new([[1,2],[0,1]])
+		@matriz+Matriz.new([[1,2],[0,1]])
 	end
 
 	it "Comprobando que se restan dos matrices" do
-		@matriz - Matriz.new([[1,2],[0,1]])
+		@matriz-Matriz.new([[1,2],[0,1]])
 	end
 
 

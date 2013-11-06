@@ -10,12 +10,25 @@ class Matriz
 
         def + (obj)
                 i = j = 0
+                sum = Matriz.new(self.m)
                 for i in 0..@tamano do
                         for j in 0..@tamano do
-                                obj.m[i][j] = @m[i][j] + obj.m[i][j]
+                                sum.m[i][j] = self.m[i][j] + obj.m[i][j]
                         end
                 end
+                sum
         end
+        
+        def - (obj)
+        res = Matriz.new(self.m)
+		i = j = 0
+		for i in 0..@tamano do
+				for j in 0..@tamano do
+						res.m[i][j] = self.m[i][j] - obj.m[i][j]
+				end
+		end
+			res
+		end
         
 		def * (obj)
 			i = j = k = 0
