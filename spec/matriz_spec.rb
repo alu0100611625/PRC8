@@ -10,6 +10,10 @@ describe Matriz do
 		@matriz + Matriz.new([[1,2],[0,1]])
 	end
 
+	it "Comprobando que se restan dos matrices" do
+		@matriz - Matriz.new([[1,2],[0,1]])
+	end
+
 
 	it "Comprobado que se multiplica matriz" do
 		@matriz * Matriz.new([[1,2],[4,2]])
