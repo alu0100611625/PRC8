@@ -29,6 +29,20 @@ class Matriz
 			puts "\n"
 		end
 		
+		def to_abs #MOSTRAR VALOR ABSOLUTO
+			for i in (0...(@tamano+1))
+				print "("
+					for j in (0...(@tamano+1))
+					if (self.m[i][j] < 0)
+						self.m[i][j]=(self.m[i][j]).abs
+					end
+						print " #{self.m[i][j]}\t"
+					end
+					puts ")\n"
+			end
+			puts "\n"
+		end
+		
         def + (obj)
                 i = j = 0
                 sum = Matriz.new(self.m)
