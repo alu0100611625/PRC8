@@ -22,5 +22,9 @@ describe Matriz do
 	it "Comprobando mostrar matrices" do
 		Matriz.new([[1,2],[0,1]]).to_s
 	end
+	
+		it "Comprobando mostrar traspuesta" do
+		Matriz.new([[1,2],[0,1]]).to_trasp
+	end
 
 end
