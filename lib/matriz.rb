@@ -18,6 +18,17 @@ class Matriz
 			puts "\n"
 		end
 		
+				def to_trasp #MOSTRAR TRASPUESTA
+			for i in (0...(@tamano+1))
+				print "("
+					for j in (0...(@tamano+1))
+						print " #{self.m[j][i]}\t"
+					end
+					puts ")\n"
+			end
+			puts "\n"
+		end
+		
         def + (obj)
                 i = j = 0
                 sum = Matriz.new(self.m)
