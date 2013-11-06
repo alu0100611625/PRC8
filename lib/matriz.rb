@@ -7,7 +7,17 @@ class Matriz
                 @tamano = una_matriz.size-1
         end
         
-
+        def to_s #MOSTRAR
+			for i in (0...(@tamano+1))
+				print "("
+					for j in (0...(@tamano+1))
+						print " #{self.m[i][j]}\t"
+					end
+					puts ")\n"
+			end
+			puts "\n"
+		end
+		
         def + (obj)
                 i = j = 0
                 sum = Matriz.new(self.m)
