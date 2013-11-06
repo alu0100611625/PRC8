@@ -19,15 +19,13 @@ class Matriz
         
 		def * (obj)
 			i = j = k = 0
-			suma_total = 0
-			matriz_resultado = Matriz.new(Array.new(@tamano+1,Array.new(obj.tamano+1)))
+			matriz_resultado = Matriz.new(self.m)
 			for i in 0..@tamano
 				for j in 0..@tamano
-					suma_total = 0;
+					matriz_resultado.m[i][j] = 0
 						for k in 0..@tamano
-								suma_total += @m[i][k] * obj.m[k][j]
+								matriz_resultado.m[i][j] += @m[i][k] * obj.m[k][j]
 						end
-					matriz_resultado.m[i][j] = suma_total
 				end
 			end
 				return matriz_resultado
